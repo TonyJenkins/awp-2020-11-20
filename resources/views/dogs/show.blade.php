@@ -12,8 +12,9 @@
 
                 <p> Owned by {{ $dog -> owner -> name}} </p>
 
-                <p> Owned by {{ $dog -> owner -> email}} </p>
-
+                <p> Owner email {{ $dog -> owner -> email}} </p>
+                <img src="{{ $dog -> owner -> avatar_url }}" alt="">
+                
             </div>
 </div>
 </div>
