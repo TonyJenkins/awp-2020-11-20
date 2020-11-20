@@ -6,11 +6,26 @@
                 {{ $dog -> name }}
             </h2>
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <div class="font-bold text-xl text-gray-800">
+                <div class="font-bold text-4xl text-gray-800">
                     Doggie Details
                 </div>
 
-{{--                Details go here.--}}
+                <div>
+                    <h2 class="font-semibold text-2xl text-gray-800">Bio</h2>
+                    <p>
+                        {{ $dog -> bio }}
+                    </p>
+
+                    <h2 class="font-semibold text-2xl text-gray-800">Owner</h2>
+
+                    <p>
+                        {{ $dog -> owner -> name }}
+                    </p>
+
+                    <p>
+                        {{ $dog -> owner -> email }}
+                    </p>
+                </div>
 
             </div>
         </div>

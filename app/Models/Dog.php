@@ -17,4 +17,7 @@ class Dog extends Model
         return $this->path();
     }
 
+    public function owner () {
+        return $this -> belongsTo (Owner::class);
+    }
 }
