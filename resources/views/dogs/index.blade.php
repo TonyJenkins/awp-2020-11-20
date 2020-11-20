@@ -13,12 +13,12 @@
                 <div class="mt-8">
 
                     <ul>
-{{--                        @foreach ($dogs as $d)--}}
-{{--                            <li>--}}
-{{--                                {{ $d -> name }}--}}
-{{--                                <a href="{{ $d->path }}">Details</a>--}}
-{{--                            </li>--}}
-{{--                        @endforeach--}}
+                        @foreach ($dogs as $d)
+                            <li>
+                                {{ $d -> name }}
+                                <a href="{{ $d->path }}">Details</a>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
 {{--                {{ $dogs -> links () }}--}}

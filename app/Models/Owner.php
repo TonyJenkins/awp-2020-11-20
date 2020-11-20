@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Owner extends Model
 {
     use HasFactory;
+
+    public function dogs () {
+        return $this -> hasMany (Dog::class);
+    }
+
 }

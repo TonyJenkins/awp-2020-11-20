@@ -10,7 +10,8 @@ class DogController extends Controller
 
     public function index()
     {
-        $dogs=Dog::query()->paginate (8);
+//        $dogs=Dog::query()->paginate (8);
+        $dogs=Dog::all();
 
         return view ('dogs.index', compact ('dogs'));
     }
