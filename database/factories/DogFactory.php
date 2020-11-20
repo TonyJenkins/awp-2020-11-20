@@ -22,9 +22,12 @@ class DogFactory extends Factory
      */
     public function definition()
     {
+        $owners = Owner::all ();
+
         return [
             'name'=>$this->faker->firstName,
             'bio'=>$this->faker->paragraph (4, true),
+            'owner_id'=>$owners->random ()->id,
         ];
     }
 }

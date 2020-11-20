@@ -10,7 +10,12 @@
                     Doggie Details
                 </div>
 
-{{--                Details go here.--}}
+                <p>
+                    Owned by: {{ $dog -> owner -> name }}.
+                </p>
+                <p>
+                    Email: {{ $dog -> owner -> email }}
+                </p>
 
             </div>
         </div>
