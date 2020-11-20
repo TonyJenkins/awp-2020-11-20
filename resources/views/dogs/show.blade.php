@@ -16,6 +16,9 @@
                 <p>
                     Email: {{ $dog -> owner -> email }}
                 </p>
+                <p>
+                    Owner Avatar: <img src="{{ $dog -> owner -> avatar_url }}">
+                </p>
 
             </div>
         </div>
